@@ -1,0 +1,106 @@
+{
+    "swagger": "2.0",
+    "info": {
+    "version": "1.0.0",
+    "description": "sample api login logout",
+    "title": "sample api"
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "schemes": [
+    "http"
+    ],
+    "paths": {
+    "/custommers": {
+    "post": {
+    "description": "Creates a user in the database",
+    "parameters": [
+    {
+    "type": "string",
+    "description": "username",
+    "name": "name",
+    "in": "formData",
+    "example": "shubham"
+    },
+    {
+    "type": "string",
+    "description": "useraddress",
+    "name": "address",
+    "in": "formData",
+    "example": "jharkhand"
+    }
+    ],
+    "responses": {
+    "200": {
+    "description" : "successfully signed up."
+    }
+    }
+    },
+    "get": {
+    "description": "Creates a user in the database",
+    "parameters":[
+        {
+            "type":"string",
+            "description":"Id",
+            "name":"id",
+            "in":"formData",
+            "example":"3"
+        }
+    ],
+    "responses": {
+    "200": {
+    "description" : "response template render"
+    }
+    }
+    },
+    "put":{
+        "description":"Creates a user in the database",
+        "parameters":[
+            {
+            "type":"string",
+            "description":"Id",
+            "name":"id",
+            "in":"formData",
+            "example":"1"
+            },
+            {
+            "type":"string",
+            "description":"name",
+            "name":"name",
+            "in":"formData",
+            "example":"Roshan"
+            },
+            {
+            "type":"string",
+            "description":"address",
+            "name":"address",
+            "in":"formData",
+            "example":"jamshedpur"
+            }
+        ],
+        "responses":{
+            "200":{
+                "description":"successfully signed up."
+            }
+        }
+    },
+    "delete":{
+        "description":"Creates a user in the database",
+        "parameters":[
+            {
+            "type":"string",
+            "description":"Id",
+            "name":"id",
+            "in":"formData",
+            "example":"4"
+            }
+        ],
+        "responses":{
+            "200":{
+                "description":"Username of user"
+            }
+        }
+    }
+    }
+    }
+    }
